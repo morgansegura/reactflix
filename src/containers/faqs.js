@@ -16,6 +16,11 @@ export function FaqsContainer() {
             </Accordian.Frame>
             <OptForm>
                 <OptForm.Input placeholder="Email Address" />
+                <OptForm.Button>Try it now</OptForm.Button>
+                <OptForm.Text>
+                    Ready to watch? Enter your email to creae or restart your
+                    membership.
+                </OptForm.Text>
             </OptForm>
         </Accordian>
     );
