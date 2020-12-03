@@ -6,6 +6,11 @@ export const Container = styled.section`
 `;
 export const Frame = styled.div`
     margin-bottom: 40px;
+    max-width: 1200px;
+
+    @media (max-width: 600px) {
+        max-width: 600px;
+    }
 `;
 export const Inner = styled.div`
     display: flex;
@@ -35,7 +40,9 @@ export const Title = styled.h2`
     }
 `;
 export const Header = styled.div`
+    width: 100%;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
     cursor: pointer;
     margin-bottom: 1px;
@@ -46,12 +53,21 @@ export const Header = styled.div`
     user-select: none;
     align-items: center;
 
+    img {
+        filter: brightness(0) invert(1);
+        width: 24px;
+        @media (max-width: 600px) {
+            width: 16px;
+        }
+    }
+
     @media (max-width: 600px) {
         font-size: 16px;
     }
 `;
 export const Body = styled.div`
-    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
     transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
     font-size: 26px;
     font-weight: normal;

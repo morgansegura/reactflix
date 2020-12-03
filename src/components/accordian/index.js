@@ -53,5 +53,6 @@ Accordian.Header = function AccordianHeader({ children, ...restProps }) {
 };
 
 Accordian.Body = function AccordianBody({ children, ...restProps }) {
-    return <Body {...restProps}>{children}</Body>;
+    const { toggleShow } = useContext(ToggleContext);
+    return toggleShow ? <Body {...restProps}>{children}</Body> : null;
 };
