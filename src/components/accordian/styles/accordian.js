@@ -5,7 +5,7 @@ export const Container = styled.section`
     border-bottom: 8px solid #222;
 `;
 export const Frame = styled.div`
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     max-width: 1200px;
 
     @media (max-width: 600px) {
