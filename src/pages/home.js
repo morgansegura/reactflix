@@ -7,7 +7,9 @@ import { HeaderContainer } from "../containers/header";
 export default function Home() {
     return (
         <>
-            <HeaderContainer />
+            <HeaderContainer>
+                <p>Hello</p>
+            </HeaderContainer>
             <JumbotronContainer />
             <FaqsContainer />
             <FooterContainer />
