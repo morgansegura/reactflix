@@ -12,6 +12,7 @@ export const Container = styled.div`
         align-items: center;
     }
 `;
+
 export const Input = styled.input`
     max-width: 450px;
     width: 100%;
@@ -20,6 +21,7 @@ export const Input = styled.input`
     height: 70px;
     box-sizing: border-box;
 `;
+
 export const Button = styled.button`
     display: flex;
     align-items: center;
@@ -53,6 +55,12 @@ export const Button = styled.button`
         font-weight: bold;
     }
 `;
+
+export const Break = styled.div`
+    flex-basis: 100%;
+    height: 0;
+`;
+
 export const Text = styled.p`
     font-size: 19px;
     color: white;
