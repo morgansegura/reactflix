@@ -87,6 +87,7 @@ export const Submit = styled.button`
     cursor: pointer;
 
     &:disabled {
+        cursor: text;
         opacity: 0.5;
     }
 `;
